@@ -1,0 +1,29 @@
+$border-color: #999;
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > div {
+    width: 400px;
+    border: solid 2px $border-color;
+  }
+
+  .todo-form {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-top: solid 1px lighten($border-color, 20%);
+  }
+
+  .todo-complete {
+    text-decoration: line-through;
+  }
+}

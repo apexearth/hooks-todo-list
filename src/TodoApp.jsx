@@ -43,7 +43,12 @@ const TodoForm = ({onAdd}) => {
     <span>Add item:</span>
     <div>
       <input type="text" value={text} onChange={e => setText(e.target.value)}/>
-      <button onClick={() => onAdd(text)}>Add</button>
+      <button onClick={() => {
+        onAdd(text);
+        setText('');
+      }}>
+        Add
+      </button>
     </div>
   </div>;
 };

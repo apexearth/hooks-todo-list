@@ -54,7 +54,7 @@ const TodoList = ({todos, toggleComplete}) => (
   </div>
 );
 
-const Todo = ({todo, toggleComplete: toggleComplete}) => (
+const Todo = ({todo, toggleComplete}) => (
   <div className={'todo'}>
     <div className={todo.complete && 'todo-complete'}>{todo.name}</div>
     <button onClick={() => toggleComplete(todo)}>{todo.complete ? 'incomplete' : 'complete'}</button>
